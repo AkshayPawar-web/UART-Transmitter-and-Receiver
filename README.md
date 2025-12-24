@@ -9,6 +9,7 @@ For UART serial communications, the baud rate needs to be set the same on both t
 The two signals of each UART device are named:
 * Transmitter (Tx)
 * Receiver (Rx)
+  
 The main purpose of a transmitter and receiver line for each device is to transmit and receive serial data intended for serial communication.
 
 <img width="783" height="329" alt="Screenshot 2025-12-24 221246" src="https://github.com/user-attachments/assets/20a79927-d496-4202-a811-086734bd648d" />
