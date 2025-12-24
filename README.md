@@ -7,8 +7,8 @@ There are Two wire in which only one wire is used for transmission and other wir
 On comparing this serial communication of UART with parallel then it can be observed that in parallel multiple buses are required.Based on the number of lines bus complexity of UART is better but parallel communication is good in terms of speed. So, when speed is required at that time we should select parallel communication and for a low-speed application, UART must be used and the bus complexity will be less.
 For UART serial communications, the baud rate needs to be set the same on both the transmitting and receiving end’s. The baud rate is the rate at which information is transferred over communication channel. In the serial port context, the set baud rate will serve as the maximum number of bits per second to be transferred. 
 The two signals of each UART device are named:
-Transmitter (Tx)
-Receiver (Rx)
+* Transmitter (Tx)
+* Receiver (Rx)
 The main purpose of a transmitter and receiver line for each device is to transmit and receive serial data intended for serial communication.
 
-<img width="473" height="169" alt="image" src="https://github.com/user-attachments/assets/e75f2b0f-813a-4299-98cc-2c629ede3e3a" />
+<img width="783" height="329" alt="Screenshot 2025-12-24 221246" src="https://github.com/user-attachments/assets/20a79927-d496-4202-a811-086734bd648d" />
