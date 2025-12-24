@@ -14,33 +14,34 @@ The main purpose of a transmitter and receiver line for each device is to transm
 
 <img width="783" height="329" alt="Screenshot 2025-12-24 221246" src="https://github.com/user-attachments/assets/20a79927-d496-4202-a811-086734bd648d" />
 
-Baud_rate_generator:
+# Baud_rate_generator:
+
 Baud rate=115200 bit/sec
+
 Internal clock frequency =25MHZ
 
 Bit Time: Amount of duration of time which s allocated to single bit which is given as follow.
 
+ <img width="277" height="121" alt="image" src="https://github.com/user-attachments/assets/8f4b0f90-1b3b-44a6-be77-7fe1211b4aca" />   
                                   
-
-                                  
-
 So baud rate  always inversely proportional to bit time as baud rate increases  bit time decreases.
 
-
 Numbers of cycle to to send the single bit at desired baud rate is given below.
-
-
-
-
-
+<img width="534" height="153" alt="image" src="https://github.com/user-attachments/assets/e9ee1506-14f7-4855-ad21-9c54175e1fed" />
 
 
 ⸫ for sending 1 bit 217 cycle are required to achieve 115200 baud rate
+
 ⸫ At master (transmitter) required counter to count 0 to 216 cycle for sending single bit and again it reset to 0 for sending other bit.
+
+<img width="621" height="68" alt="image" src="https://github.com/user-attachments/assets/7a40e60e-c6b4-4528-a3c1-03910b00ca74" />
 
 
 At the receiver, the number of clock cycles required to receive a single bit is 14 cycles. The difference between the transmitter and receiver timing occurs because, in UART, there is no shared clock between the transmitter and receiver. Due to possible baud-rate mismatch and clock drift, the receiver cannot rely on exact bit timing like the transmitter.
-To avoid missing data, the receiver uses a 16× oversampling technique. It samples the incoming data multiple times within one bit period and selects the sample near the center of the bit. Because of start-bit detection and internal synchronization, the effective sampling of each bit happens after about 14 cycles instead of 16, which improves reliability and ensures correct data reception.
+To avoid missing data, the receiver uses a 16× oversampling technique. It samples the incoming data multiple times within one bit period and selects the sample near the center of the bit. 
+
+Because of start-bit detection and internal synchronization, the effective sampling of each bit happens after about 14 cycles instead of 16, which improves reliability and ensures correct data reception.
+
 ⸫ At slave (receiver) required counter to count 0 to 14 cycle for receiving single bit and again it reset to 0 for re other bit.
 
 # Repository Structure
