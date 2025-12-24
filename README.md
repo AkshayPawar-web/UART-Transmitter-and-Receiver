@@ -44,6 +44,14 @@ Because of start-bit detection and internal synchronization, the effective sampl
 
 ⸫ At slave (receiver) required counter to count 0 to 14 cycle for receiving single bit and again it reset to 0 for re other bit.
 
+# Transmitter FSM:
+<img width="598" height="405" alt="image" src="https://github.com/user-attachments/assets/d4ccbc4f-d9fb-4172-a8b6-12245db1ffbd" />
+
+# Receiver FSM:
+
+<img width="620" height="399" alt="image" src="https://github.com/user-attachments/assets/08f5cbcb-878c-426e-9a9c-8c8d091e9f7b" />
+
+
 # Repository Structure
 * Schematic
 * code
